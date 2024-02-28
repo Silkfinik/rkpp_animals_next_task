@@ -23,21 +23,9 @@ private:
     Owner(Owner&& other) noexcept : o_name(std::move(other.o_name)), adress(std::move(other.adress)),
     phone(std::move(other.phone)), b_date(std::move(other.b_date)) {};
 
-    Owner& operator=(const Owner& other) {
-        o_name = other.o_name;
-        adress = other.adress;
-        phone = other.phone;
-        b_date = other.b_date;
-        return *this;
-    }
+    Owner& operator=(const Owner& other);
 
-    Owner& operator=(Owner&& other) noexcept {
-        o_name = std::move(other.o_name);
-        adress = std::move(other.adress);
-        phone = std::move(other.phone);
-        b_date = std::move(other.b_date);
-        return *this;
-    }
+    Owner& operator=(Owner&& other) noexcept;
 
     void SetOName(const std::string& _name);
     void SetAdress(const std::string& _adress);
@@ -69,6 +57,11 @@ public:
 
     Animal (Owner _owner, std::string _name, const __int16& _age) : owner(std::move(_owner)),
     a_name(std::move(_name)), age(_age), id(count++) {};
+
+    Animal (const Animal& other) : owner(other.owner), a_name(other.a_name), age(other.age), id(count++) {};
+
+    Animal(Animal&& other) noexcept : owner(std::move(other.owner)), a_name(std::move(other.a_name)),
+    age(std::move(other.age)), id(count++) {};
 
     virtual ~Animal() = default;
 
