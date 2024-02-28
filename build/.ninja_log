@@ -1,0 +1,14 @@
+# ninja log v5
+7	1283	7308498517461954	CMakeFiles/animals.dir/main.cpp.obj	cba9cbab672c536d
+6	1536	7308194348530115	CMakeFiles/animals.dir/Animals.cpp.obj	70ca79a51d51e982
+1286	1436	7308498518982072	animals.exe	2150644826b0da6a
+7	1235	7308520181047174	CMakeFiles/animals.dir/main.cpp.obj	cba9cbab672c536d
+1236	1400	7308520182687327	animals.exe	2150644826b0da6a
+7	1249	7308522261354631	CMakeFiles/animals.dir/main.cpp.obj	cba9cbab672c536d
+1249	1404	7308522262914737	animals.exe	2150644826b0da6a
+8	1301	7308522962012040	CMakeFiles/animals.dir/main.cpp.obj	cba9cbab672c536d
+7	1242	7308523260389768	CMakeFiles/animals.dir/main.cpp.obj	cba9cbab672c536d
+8	1211	7308523744742445	CMakeFiles/animals.dir/main.cpp.obj	cba9cbab672c536d
+7	155	7308525190325520	animals.exe	2150644826b0da6a
+8	1227	7308525607658298	CMakeFiles/animals.dir/main.cpp.obj	cba9cbab672c536d
+1228	1385	7308525609238410	animals.exe	2150644826b0da6a

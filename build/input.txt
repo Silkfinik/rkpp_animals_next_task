@@ -1,0 +1,16 @@
+Makar;st. Lenina, 2, Minsk;+375 (29) 123-45-67;14.05.1995;Parrot;Kesha;2
+Artem;st. Lenina, 10A, Grodno;+375 (25) 765-43-21;03.08.1998;Dog;Jessie;5
+Mikhail;st. Lenina, 11, Bobruisk;+375 (33) 321-65-47;21.10.2000;Fish;Guppy;0
+Ivan;st. Moskovskaya, 149, Zhlobin;+375 (44) 555-12-34;07.12.1999;Pig;Funtik;3
+Maxim;st. Lenina, 2, Mozyr;+375 (17) 234-56-78;19.03.1997;Cat;Marquise;7
+Alexander;st. Pervomayskaya, 33, Svetlogorsk;+375 (22) 678-90-12;25.06.2002;Fish;;1
+Daniil;st. Internatsionalnaya, 25A, Gomel;+375 (16) 456-78-90;10.01.2001;Parrot;Ricky;3
+Lev;st. Sovetskaya, 18, Mogilev, 212030;+375 (24) 321-12-34;04.09.1996;Pig;Pyatachok;4
+Mark;st. Lenina, 16A, Vitebsk;+375 (21) 654-32-10;15.11.2003;Dog;Naida;1
+Matvei;st. Lenina, 4, Brest;+375 (34) 123-45-67;28.02.2004;Cat;Murzik;2
+Makar;st. Lenina, 2, Minsk;+375 (29) 123-45-67;14.05.1995;Parrot;Kesha;2
+Makar;st. Lenina, 2, Minsk;+375 (29) 123-45-67;14.05.1995;Parrot;Kesha;2
+Makar;st. Lenina, 2, Minsk;+375 (29) 123-45-67;14.05.1995;Parrot;Kesha;2
+Makar;st. Lenina, 2, Minsk;+375 (29) 123-45-67;14.05.1995;Parrot;Kesha;2
+Makar;st. Lenina, 2, Minsk;+375 (29) 123-45-67;14.05.1994;Dog;Kesha;2
+Alexey;st. Lenina, 2, Minsk;+375 (29) 123-45-67;14.05.1995;Parrot;Kesha;2

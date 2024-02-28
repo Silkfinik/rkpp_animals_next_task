@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/C++/VSCodeProjects/cpp/rkpp_animals/build",
+  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe -g -std=gnu++17 -o CMakeFiles\\animals.dir\\main.cpp.obj -c D:\\C++\\VSCodeProjects\\cpp\\rkpp_animals\\main.cpp",
+  "file": "D:\\C++\\VSCodeProjects\\cpp\\rkpp_animals\\main.cpp",
+  "output": "CMakeFiles\\animals.dir\\main.cpp.obj"
+}
+]

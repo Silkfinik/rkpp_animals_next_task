@@ -1,0 +1,3 @@
+D:/C++/VSCodeProjects/cpp/rkpp_animals/build/CMakeFiles/animals.dir
+D:/C++/VSCodeProjects/cpp/rkpp_animals/build/CMakeFiles/edit_cache.dir
+D:/C++/VSCodeProjects/cpp/rkpp_animals/build/CMakeFiles/rebuild_cache.dir
