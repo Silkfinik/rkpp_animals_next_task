@@ -28,12 +28,30 @@ __int16 Animal::GetAge() const {
     return age.value();
 }
 
-Owner& Animal::GetOwner() {
+Owner& Animal::GetOwnerRef() {
+    return owner.value();
+}
+
+Owner Animal::GetOwner() const {
     return owner.value();
 }
 
 __int16 Animal::GetId() const {
     return id;
+}
+
+Animal& Animal::operator=(const Animal& other) {
+    owner = other.owner;
+    a_name = other.a_name;
+    age = other.age;
+    return *this;
+}
+
+Animal& Animal::operator=(Animal&& other) noexcept {
+    owner = std::move(other.owner);
+    a_name = std::move(other.a_name);
+    age = std::move(other.age);
+    return *this;
 }
 
 
@@ -96,6 +114,19 @@ void Dog::SetBreed(const std::string& _breed) {
 
 std::string Dog::GetBreed() const {
     return breed.value();
+}
+
+Dog& Dog::operator=(const Dog& other) {
+    SetOwner(other.GetOwner());
+    SetAName(other.GetAName());
+    SetAge(other.GetAge());
+    breed = other.breed;
+    return *this;
+}
+
+Dog& Dog::operator=(Dog&& other) noexcept {
+    
+    return *this;
 }
 
 
@@ -207,10 +238,10 @@ void PrintByID(__int16 id, const std::vector<Animal*>& pets) {
     std::cout << "Type: " << type.substr(1) << std::endl;
     std::cout << "Name: " << pets[id]->GetAName() << std::endl;
     std::cout << "Age: " << pets[id]->GetAge() << std::endl;
-    std::cout << "Owner name: " << pets[id]->GetOwner().GetOName() << std::endl;
-    std::cout << "Adress: " << pets[id]->GetOwner().GetAdress() << std::endl;
-    std::cout << "Owner phone: " << pets[id]->GetOwner().GetPhone() << std::endl;
-    std::cout << "Owner birth date: " << pets[id]->GetOwner().GetBDate() << std::endl;
+    std::cout << "Owner name: " << pets[id]->GetOwnerRef().GetOName() << std::endl;
+    std::cout << "Adress: " << pets[id]->GetOwnerRef().GetAdress() << std::endl;
+    std::cout << "Owner phone: " << pets[id]->GetOwnerRef().GetPhone() << std::endl;
+    std::cout << "Owner birth date: " << pets[id]->GetOwnerRef().GetBDate() << std::endl;
     std::cout << "-------------------" << std::endl;
 }
 
@@ -226,7 +257,7 @@ void DifTypesByOwner(const std::vector <Animal*>& pets) {
     std::cout << "| The number of different types of animals each owner has |\n" << std::endl;
     std::map<std::string, std::set<std::string> > owners;
     for (auto& pet : pets) {
-        std::string owner_name = pet->GetOwner().GetOName();
+        std::string owner_name = pet->GetOwnerRef().GetOName();
         std::string type = typeid(*pet).name();
         type = type.substr(1);
         owners[owner_name].insert(type);
@@ -259,7 +290,7 @@ void OwnersAndNamesByType(const std::vector<Animal*>& pets) {
             std::string type = typeid(*pet).name();
             type = type.substr(1);
             if (type == input_type) {
-                owners.insert(pet->GetOwner().GetOName());
+                owners.insert(pet->GetOwnerRef().GetOName());
                 names.insert(pet->GetAName());
             }
         }
@@ -327,10 +358,10 @@ void ClaerMemoryAndWriteFile(const std::string& filename, std::vector<Animal*>& 
         for (auto& pet : pets) {
                 std::string type = typeid(*pet).name();
                 type = type.substr(1);
-                output_file << pet->GetOwner().GetOName() << ";";
-                output_file << pet->GetOwner().GetAdress() << ";";
-                output_file << pet->GetOwner().GetPhone() << ";";
-                output_file << pet->GetOwner().GetBDate() << ";";
+                output_file << pet->GetOwnerRef().GetOName() << ";";
+                output_file << pet->GetOwnerRef().GetAdress() << ";";
+                output_file << pet->GetOwnerRef().GetPhone() << ";";
+                output_file << pet->GetOwnerRef().GetBDate() << ";";
                 output_file << type << ";";
                 output_file << pet->GetAName() << ";";
                 output_file << pet->GetAge() << std::endl;
@@ -398,7 +429,7 @@ void ChangeAnimalData(std::vector <Animal*>& pets) {
     std::string temp;
     switch (action) {
         case 1:
-            ChangeOwnerData(pets[id]->GetOwner());
+            ChangeOwnerData(pets[id]->GetOwnerRef());
             break;
         case 2:
             std::cout << "Enter new animal name: ";

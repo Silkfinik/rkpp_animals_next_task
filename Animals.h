@@ -65,6 +65,10 @@ public:
 
     virtual ~Animal() = default;
 
+    Animal& operator=(const Animal& other);
+
+    Animal& operator=(Animal&& other) noexcept;
+
     virtual void MakeSound() const = 0;
 
     void SetOwner(const Owner& _owner);
@@ -73,7 +77,8 @@ public:
 
     [[nodiscard]] std::string GetAName() const;
     __int16 GetAge() const;
-    [[nodiscard]] Owner& GetOwner();
+    [[nodiscard]] Owner& GetOwnerRef();
+    [[nodiscard]] Owner GetOwner() const;
     __int16 GetId() const;
 };
 
@@ -82,8 +87,17 @@ private:
     std::optional<std::string> breed;
 public:
     using Animal::Animal;
+
     Dog (Owner _owner, std::string _name, const __int16& _age, std::string _breed) : Animal(std::move(_owner),
         std::move(_name), _age), breed(std::move(_breed)) {};
+
+    Dog (const Dog& other) : Animal(other), breed(other.breed) {};
+
+    Dog(Dog&& other) noexcept : Animal(std::move(other)), breed(std::move(other.breed)) {};
+
+    Dog& operator=(const Dog& other);
+
+    Dog& operator=(Dog&& other) noexcept;
 
     void MakeSound() const override;
 
@@ -97,6 +111,7 @@ private:
     std::optional<std::string> color;
 public:
     using Animal::Animal;
+
     Cat (Owner _owner, std::string _name, const __int16& _age, std::string _color) : Animal(std::move(_owner),
         std::move(_name), _age), color(std::move(_color)) {};
 
@@ -112,6 +127,7 @@ private:
     std::optional<__int16> lexicon;
 public:
     using Animal::Animal;
+
     Parrot (Owner _owner, std::string _name, const __int16& _age, const __int16& _lexicon) : Animal(std::move(_owner),
         std::move(_name), _age), lexicon(_lexicon) {};
 
@@ -127,6 +143,7 @@ private:
     std::optional<__int16> avg_depth;
 public:
     using Animal::Animal;
+
     Fish (Owner _owner, std::string _name, const __int16& _age, const __int16& _avg_depth) : Animal(std::move(_owner),
         std::move(_name), _age), avg_depth(_avg_depth) {};
 
@@ -142,6 +159,7 @@ private:
     std::optional<__int16> piglet_size;
 public:
     using Animal::Animal;
+
     Pig (Owner _owner, std::string _name, const __int16& _age, const __int16& _piglet_size) : Animal(std::move(_owner),
         std::move(_name), _age), piglet_size(_piglet_size) {};
 
