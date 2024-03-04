@@ -117,15 +117,14 @@ std::string Dog::GetBreed() const {
 }
 
 Dog& Dog::operator=(const Dog& other) {
-    SetOwner(other.GetOwner());
-    SetAName(other.GetAName());
-    SetAge(other.GetAge());
+    static_cast<Animal&>(*this) = other;
     breed = other.breed;
     return *this;
 }
 
 Dog& Dog::operator=(Dog&& other) noexcept {
-    
+    static_cast<Animal&>(*this) = std::move(other);
+    breed = std::move(other.breed);
     return *this;
 }
 
@@ -142,6 +141,18 @@ std::string Cat::GetColor() const {
     return color.value();
 }
 
+Cat& Cat::operator=(const Cat& other) {
+    static_cast<Animal&>(*this) = other;
+    color = other.color;
+    return *this;
+}
+
+Cat& Cat::operator=(Cat&& other) noexcept {
+    static_cast<Animal&>(*this) = std::move(other);
+    color = std::move(other.color);
+    return *this;
+}
+
 
 void Parrot::MakeSound() const {
     std::cout << "Squawk!" << std::endl;
@@ -153,6 +164,18 @@ void Parrot::SetLexicon(const __int16& _lexicon) {
 
 __int16 Parrot::GetLexicon() const {
     return lexicon.value();
+}
+
+Parrot& Parrot::operator=(const Parrot& other) {
+    static_cast<Animal&>(*this) = other;
+    lexicon = other.lexicon;
+    return *this;
+}
+
+Parrot& Parrot::operator=(Parrot&& other) noexcept {
+    static_cast<Animal&>(*this) = std::move(other);
+    lexicon = std::move(other.lexicon);
+    return *this;
 }
 
 
@@ -168,6 +191,18 @@ __int16 Fish::GetAvgDepth() const {
     return avg_depth.value();
 }
 
+Fish& Fish::operator=(const Fish& other) {
+    static_cast<Animal&>(*this) = other;
+    avg_depth = other.avg_depth;
+    return *this;
+}
+
+Fish& Fish::operator=(Fish&& other) noexcept {
+    static_cast<Animal&>(*this) = std::move(other);
+    avg_depth = std::move(other.avg_depth);
+    return *this;
+}
+
 
 void Pig::MakeSound() const {
     std::cout << "Oink!" << std::endl;
@@ -179,6 +214,18 @@ void Pig::SetPigletSize(const __int16& _piglet_size) {
 
 __int16 Pig::GetPigletSize() const {
     return piglet_size.value();
+}
+
+Pig& Pig::operator=(const Pig& other) {
+    static_cast<Animal&>(*this) = other;
+    piglet_size = other.piglet_size;
+    return *this;
+}
+
+Pig& Pig::operator=(Pig&& other) noexcept {
+    static_cast<Animal&>(*this) = std::move(other);
+    piglet_size = std::move(other.piglet_size);
+    return *this;
 }
 
 std::string cut_fill(std::string& line, const char& symbol) {

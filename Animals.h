@@ -115,6 +115,14 @@ public:
     Cat (Owner _owner, std::string _name, const __int16& _age, std::string _color) : Animal(std::move(_owner),
         std::move(_name), _age), color(std::move(_color)) {};
 
+    Cat (const Cat& other) : Animal(other), color(other.color) {};
+
+    Cat(Cat&& other) noexcept : Animal(std::move(other)), color(std::move(other.color)) {};
+
+    Cat& operator=(const Cat& other);
+
+    Cat& operator=(Cat&& other) noexcept;
+
     void MakeSound() const override;
 
     [[nodiscard]] std::string GetColor() const;
@@ -130,6 +138,14 @@ public:
 
     Parrot (Owner _owner, std::string _name, const __int16& _age, const __int16& _lexicon) : Animal(std::move(_owner),
         std::move(_name), _age), lexicon(_lexicon) {};
+
+    Parrot (const Parrot& other) : Animal(other), lexicon(other.lexicon) {};
+
+    Parrot(Parrot&& other) noexcept : Animal(std::move(other)), lexicon(std::move(other.lexicon)) {};
+
+    Parrot& operator=(const Parrot& other);
+
+    Parrot& operator=(Parrot&& other) noexcept;
 
     void MakeSound() const override;
 
@@ -147,6 +163,14 @@ public:
     Fish (Owner _owner, std::string _name, const __int16& _age, const __int16& _avg_depth) : Animal(std::move(_owner),
         std::move(_name), _age), avg_depth(_avg_depth) {};
 
+    Fish (const Fish& other) : Animal(other), avg_depth(other.avg_depth) {};
+
+    Fish(Fish&& other) noexcept : Animal(std::move(other)), avg_depth(std::move(other.avg_depth)) {};
+
+    Fish& operator=(const Fish& other);
+
+    Fish& operator=(Fish&& other) noexcept;
+
     void MakeSound() const override;
 
     __int16 GetAvgDepth() const;
@@ -162,6 +186,14 @@ public:
 
     Pig (Owner _owner, std::string _name, const __int16& _age, const __int16& _piglet_size) : Animal(std::move(_owner),
         std::move(_name), _age), piglet_size(_piglet_size) {};
+
+    Pig (const Pig& other) : Animal(other), piglet_size(other.piglet_size) {};
+
+    Pig(Pig&& other) noexcept : Animal(std::move(other)), piglet_size(std::move(other.piglet_size)) {};
+
+    Pig& operator=(const Pig& other);
+
+    Pig& operator=(Pig&& other) noexcept;
 
     void MakeSound() const override;
 
