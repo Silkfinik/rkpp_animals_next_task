@@ -1,4 +1,4 @@
-# Install script for directory: D:/C++/VSCodeProjects/cpp/rkpp_animals
+# Install script for directory: D:/Programming/cpp/rkpp_animals
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/C++/VSCodeProjects/cpp/rkpp_animals/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Programming/cpp/rkpp_animals/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/C++/VSCodeProjects/cpp/rkpp_animals/build"
+			"value" : "d:/Programming/cpp/rkpp_animals/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "29"
+			"value" : "28"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,23 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "0"
+			"value" : "3"
+		},
+		{
+			"name" : "CMAKE_COLOR_MAKEFILE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Enable/Disable color output during build."
+				}
+			],
+			"type" : "BOOL",
+			"value" : "ON"
 		},
 		{
 			"name" : "CMAKE_COMMAND",
@@ -603,7 +619,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/C++/VSCodeProjects/cpp/rkpp_animals/build/CMakeFiles/pkgRedirects"
+			"value" : "D:/Programming/cpp/rkpp_animals/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -615,7 +631,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "Ninja"
+			"value" : "MinGW Makefiles"
 		},
 		{
 			"name" : "CMAKE_GENERATOR_INSTANCE",
@@ -675,7 +691,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/C++/VSCodeProjects/cpp/rkpp_animals"
+			"value" : "D:/Programming/cpp/rkpp_animals"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -715,11 +731,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Program used to build from build.ninja files."
+					"value" : "Path to a program."
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/ProgramData/chocolatey/bin/ninja.exe"
+			"value" : "C:/msys64/mingw64/bin/mingw32-make.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1059,7 +1075,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/CMake/share/cmake-3.29"
+			"value" : "C:/Program Files/CMake/share/cmake-3.28"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1323,7 +1339,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/C++/VSCodeProjects/cpp/rkpp_animals/build"
+			"value" : "D:/Programming/cpp/rkpp_animals/build"
 		},
 		{
 			"name" : "animals_IS_TOP_LEVEL",
@@ -1347,7 +1363,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/C++/VSCodeProjects/cpp/rkpp_animals"
+			"value" : "D:/Programming/cpp/rkpp_animals"
 		}
 	],
 	"kind" : "cache",
