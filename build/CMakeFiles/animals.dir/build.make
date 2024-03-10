@@ -68,33 +68,153 @@ include CMakeFiles/animals.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/animals.dir/flags.make
 
-CMakeFiles/animals.dir/main.cpp.obj: CMakeFiles/animals.dir/flags.make
-CMakeFiles/animals.dir/main.cpp.obj: D:/Programming/cpp/rkpp_animals/main.cpp
-CMakeFiles/animals.dir/main.cpp.obj: CMakeFiles/animals.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Programming\cpp\rkpp_animals\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/animals.dir/main.cpp.obj"
-	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/animals.dir/main.cpp.obj -MF CMakeFiles\animals.dir\main.cpp.obj.d -o CMakeFiles\animals.dir\main.cpp.obj -c D:\Programming\cpp\rkpp_animals\main.cpp
+CMakeFiles/animals.dir/src/Animal.cpp.obj: CMakeFiles/animals.dir/flags.make
+CMakeFiles/animals.dir/src/Animal.cpp.obj: CMakeFiles/animals.dir/includes_CXX.rsp
+CMakeFiles/animals.dir/src/Animal.cpp.obj: D:/Programming/cpp/rkpp_animals/src/Animal.cpp
+CMakeFiles/animals.dir/src/Animal.cpp.obj: CMakeFiles/animals.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Programming\cpp\rkpp_animals\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/animals.dir/src/Animal.cpp.obj"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/animals.dir/src/Animal.cpp.obj -MF CMakeFiles\animals.dir\src\Animal.cpp.obj.d -o CMakeFiles\animals.dir\src\Animal.cpp.obj -c D:\Programming\cpp\rkpp_animals\src\Animal.cpp
 
-CMakeFiles/animals.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/animals.dir/main.cpp.i"
-	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\cpp\rkpp_animals\main.cpp > CMakeFiles\animals.dir\main.cpp.i
+CMakeFiles/animals.dir/src/Animal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/animals.dir/src/Animal.cpp.i"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\cpp\rkpp_animals\src\Animal.cpp > CMakeFiles\animals.dir\src\Animal.cpp.i
 
-CMakeFiles/animals.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/animals.dir/main.cpp.s"
-	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\cpp\rkpp_animals\main.cpp -o CMakeFiles\animals.dir\main.cpp.s
+CMakeFiles/animals.dir/src/Animal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/animals.dir/src/Animal.cpp.s"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\cpp\rkpp_animals\src\Animal.cpp -o CMakeFiles\animals.dir\src\Animal.cpp.s
+
+CMakeFiles/animals.dir/src/Cat.cpp.obj: CMakeFiles/animals.dir/flags.make
+CMakeFiles/animals.dir/src/Cat.cpp.obj: CMakeFiles/animals.dir/includes_CXX.rsp
+CMakeFiles/animals.dir/src/Cat.cpp.obj: D:/Programming/cpp/rkpp_animals/src/Cat.cpp
+CMakeFiles/animals.dir/src/Cat.cpp.obj: CMakeFiles/animals.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Programming\cpp\rkpp_animals\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/animals.dir/src/Cat.cpp.obj"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/animals.dir/src/Cat.cpp.obj -MF CMakeFiles\animals.dir\src\Cat.cpp.obj.d -o CMakeFiles\animals.dir\src\Cat.cpp.obj -c D:\Programming\cpp\rkpp_animals\src\Cat.cpp
+
+CMakeFiles/animals.dir/src/Cat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/animals.dir/src/Cat.cpp.i"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\cpp\rkpp_animals\src\Cat.cpp > CMakeFiles\animals.dir\src\Cat.cpp.i
+
+CMakeFiles/animals.dir/src/Cat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/animals.dir/src/Cat.cpp.s"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\cpp\rkpp_animals\src\Cat.cpp -o CMakeFiles\animals.dir\src\Cat.cpp.s
+
+CMakeFiles/animals.dir/src/Dog.cpp.obj: CMakeFiles/animals.dir/flags.make
+CMakeFiles/animals.dir/src/Dog.cpp.obj: CMakeFiles/animals.dir/includes_CXX.rsp
+CMakeFiles/animals.dir/src/Dog.cpp.obj: D:/Programming/cpp/rkpp_animals/src/Dog.cpp
+CMakeFiles/animals.dir/src/Dog.cpp.obj: CMakeFiles/animals.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Programming\cpp\rkpp_animals\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/animals.dir/src/Dog.cpp.obj"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/animals.dir/src/Dog.cpp.obj -MF CMakeFiles\animals.dir\src\Dog.cpp.obj.d -o CMakeFiles\animals.dir\src\Dog.cpp.obj -c D:\Programming\cpp\rkpp_animals\src\Dog.cpp
+
+CMakeFiles/animals.dir/src/Dog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/animals.dir/src/Dog.cpp.i"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\cpp\rkpp_animals\src\Dog.cpp > CMakeFiles\animals.dir\src\Dog.cpp.i
+
+CMakeFiles/animals.dir/src/Dog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/animals.dir/src/Dog.cpp.s"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\cpp\rkpp_animals\src\Dog.cpp -o CMakeFiles\animals.dir\src\Dog.cpp.s
+
+CMakeFiles/animals.dir/src/Fish.cpp.obj: CMakeFiles/animals.dir/flags.make
+CMakeFiles/animals.dir/src/Fish.cpp.obj: CMakeFiles/animals.dir/includes_CXX.rsp
+CMakeFiles/animals.dir/src/Fish.cpp.obj: D:/Programming/cpp/rkpp_animals/src/Fish.cpp
+CMakeFiles/animals.dir/src/Fish.cpp.obj: CMakeFiles/animals.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Programming\cpp\rkpp_animals\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/animals.dir/src/Fish.cpp.obj"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/animals.dir/src/Fish.cpp.obj -MF CMakeFiles\animals.dir\src\Fish.cpp.obj.d -o CMakeFiles\animals.dir\src\Fish.cpp.obj -c D:\Programming\cpp\rkpp_animals\src\Fish.cpp
+
+CMakeFiles/animals.dir/src/Fish.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/animals.dir/src/Fish.cpp.i"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\cpp\rkpp_animals\src\Fish.cpp > CMakeFiles\animals.dir\src\Fish.cpp.i
+
+CMakeFiles/animals.dir/src/Fish.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/animals.dir/src/Fish.cpp.s"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\cpp\rkpp_animals\src\Fish.cpp -o CMakeFiles\animals.dir\src\Fish.cpp.s
+
+CMakeFiles/animals.dir/src/Owner.cpp.obj: CMakeFiles/animals.dir/flags.make
+CMakeFiles/animals.dir/src/Owner.cpp.obj: CMakeFiles/animals.dir/includes_CXX.rsp
+CMakeFiles/animals.dir/src/Owner.cpp.obj: D:/Programming/cpp/rkpp_animals/src/Owner.cpp
+CMakeFiles/animals.dir/src/Owner.cpp.obj: CMakeFiles/animals.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Programming\cpp\rkpp_animals\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/animals.dir/src/Owner.cpp.obj"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/animals.dir/src/Owner.cpp.obj -MF CMakeFiles\animals.dir\src\Owner.cpp.obj.d -o CMakeFiles\animals.dir\src\Owner.cpp.obj -c D:\Programming\cpp\rkpp_animals\src\Owner.cpp
+
+CMakeFiles/animals.dir/src/Owner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/animals.dir/src/Owner.cpp.i"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\cpp\rkpp_animals\src\Owner.cpp > CMakeFiles\animals.dir\src\Owner.cpp.i
+
+CMakeFiles/animals.dir/src/Owner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/animals.dir/src/Owner.cpp.s"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\cpp\rkpp_animals\src\Owner.cpp -o CMakeFiles\animals.dir\src\Owner.cpp.s
+
+CMakeFiles/animals.dir/src/Parrot.cpp.obj: CMakeFiles/animals.dir/flags.make
+CMakeFiles/animals.dir/src/Parrot.cpp.obj: CMakeFiles/animals.dir/includes_CXX.rsp
+CMakeFiles/animals.dir/src/Parrot.cpp.obj: D:/Programming/cpp/rkpp_animals/src/Parrot.cpp
+CMakeFiles/animals.dir/src/Parrot.cpp.obj: CMakeFiles/animals.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Programming\cpp\rkpp_animals\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/animals.dir/src/Parrot.cpp.obj"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/animals.dir/src/Parrot.cpp.obj -MF CMakeFiles\animals.dir\src\Parrot.cpp.obj.d -o CMakeFiles\animals.dir\src\Parrot.cpp.obj -c D:\Programming\cpp\rkpp_animals\src\Parrot.cpp
+
+CMakeFiles/animals.dir/src/Parrot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/animals.dir/src/Parrot.cpp.i"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\cpp\rkpp_animals\src\Parrot.cpp > CMakeFiles\animals.dir\src\Parrot.cpp.i
+
+CMakeFiles/animals.dir/src/Parrot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/animals.dir/src/Parrot.cpp.s"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\cpp\rkpp_animals\src\Parrot.cpp -o CMakeFiles\animals.dir\src\Parrot.cpp.s
+
+CMakeFiles/animals.dir/src/Pig.cpp.obj: CMakeFiles/animals.dir/flags.make
+CMakeFiles/animals.dir/src/Pig.cpp.obj: CMakeFiles/animals.dir/includes_CXX.rsp
+CMakeFiles/animals.dir/src/Pig.cpp.obj: D:/Programming/cpp/rkpp_animals/src/Pig.cpp
+CMakeFiles/animals.dir/src/Pig.cpp.obj: CMakeFiles/animals.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Programming\cpp\rkpp_animals\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/animals.dir/src/Pig.cpp.obj"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/animals.dir/src/Pig.cpp.obj -MF CMakeFiles\animals.dir\src\Pig.cpp.obj.d -o CMakeFiles\animals.dir\src\Pig.cpp.obj -c D:\Programming\cpp\rkpp_animals\src\Pig.cpp
+
+CMakeFiles/animals.dir/src/Pig.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/animals.dir/src/Pig.cpp.i"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\cpp\rkpp_animals\src\Pig.cpp > CMakeFiles\animals.dir\src\Pig.cpp.i
+
+CMakeFiles/animals.dir/src/Pig.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/animals.dir/src/Pig.cpp.s"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\cpp\rkpp_animals\src\Pig.cpp -o CMakeFiles\animals.dir\src\Pig.cpp.s
+
+CMakeFiles/animals.dir/src/main.cpp.obj: CMakeFiles/animals.dir/flags.make
+CMakeFiles/animals.dir/src/main.cpp.obj: CMakeFiles/animals.dir/includes_CXX.rsp
+CMakeFiles/animals.dir/src/main.cpp.obj: D:/Programming/cpp/rkpp_animals/src/main.cpp
+CMakeFiles/animals.dir/src/main.cpp.obj: CMakeFiles/animals.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Programming\cpp\rkpp_animals\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/animals.dir/src/main.cpp.obj"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/animals.dir/src/main.cpp.obj -MF CMakeFiles\animals.dir\src\main.cpp.obj.d -o CMakeFiles\animals.dir\src\main.cpp.obj -c D:\Programming\cpp\rkpp_animals\src\main.cpp
+
+CMakeFiles/animals.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/animals.dir/src/main.cpp.i"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\cpp\rkpp_animals\src\main.cpp > CMakeFiles\animals.dir\src\main.cpp.i
+
+CMakeFiles/animals.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/animals.dir/src/main.cpp.s"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\cpp\rkpp_animals\src\main.cpp -o CMakeFiles\animals.dir\src\main.cpp.s
 
 # Object files for target animals
 animals_OBJECTS = \
-"CMakeFiles/animals.dir/main.cpp.obj"
+"CMakeFiles/animals.dir/src/Animal.cpp.obj" \
+"CMakeFiles/animals.dir/src/Cat.cpp.obj" \
+"CMakeFiles/animals.dir/src/Dog.cpp.obj" \
+"CMakeFiles/animals.dir/src/Fish.cpp.obj" \
+"CMakeFiles/animals.dir/src/Owner.cpp.obj" \
+"CMakeFiles/animals.dir/src/Parrot.cpp.obj" \
+"CMakeFiles/animals.dir/src/Pig.cpp.obj" \
+"CMakeFiles/animals.dir/src/main.cpp.obj"
 
 # External object files for target animals
 animals_EXTERNAL_OBJECTS =
 
-animals.exe: CMakeFiles/animals.dir/main.cpp.obj
+animals.exe: CMakeFiles/animals.dir/src/Animal.cpp.obj
+animals.exe: CMakeFiles/animals.dir/src/Cat.cpp.obj
+animals.exe: CMakeFiles/animals.dir/src/Dog.cpp.obj
+animals.exe: CMakeFiles/animals.dir/src/Fish.cpp.obj
+animals.exe: CMakeFiles/animals.dir/src/Owner.cpp.obj
+animals.exe: CMakeFiles/animals.dir/src/Parrot.cpp.obj
+animals.exe: CMakeFiles/animals.dir/src/Pig.cpp.obj
+animals.exe: CMakeFiles/animals.dir/src/main.cpp.obj
 animals.exe: CMakeFiles/animals.dir/build.make
 animals.exe: CMakeFiles/animals.dir/linkLibs.rsp
 animals.exe: CMakeFiles/animals.dir/objects1.rsp
 animals.exe: CMakeFiles/animals.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Programming\cpp\rkpp_animals\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable animals.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Programming\cpp\rkpp_animals\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable animals.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\animals.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

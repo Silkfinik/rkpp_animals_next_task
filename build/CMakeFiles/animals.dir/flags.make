@@ -4,7 +4,7 @@
 # compile CXX with C:/msys64/mingw64/bin/clang++.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = @CMakeFiles/animals.dir/includes_CXX.rsp
 
 CXX_FLAGS = -g -std=gnu++17
 

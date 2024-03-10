@@ -1,7 +1,9 @@
 CMakeFiles/animals.dir/main.cpp.obj: \
   D:/Programming/cpp/rkpp_animals/main.cpp \
-  D:/Programming/cpp/rkpp_animals/Animals.cpp \
-  D:/Programming/cpp/rkpp_animals/Animals.h \
+  D:/Programming/cpp/rkpp_animals/funcs.cpp \
+  D:/Programming/cpp/rkpp_animals/Dog.h \
+  D:/Programming/cpp/rkpp_animals/Animal.h \
+  D:/Programming/cpp/rkpp_animals/Owner.h \
   C:/msys64/mingw64/include/c++/13.2.0/string \
   C:/msys64/mingw64/include/c++/13.2.0/bits/requires_hosted.h \
   C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -104,6 +106,10 @@ CMakeFiles/animals.dir/main.cpp.obj: \
   C:/msys64/mingw64/include/c++/13.2.0/typeinfo \
   C:/msys64/mingw64/include/c++/13.2.0/bits/nested_exception.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/enable_special_members.h \
+  D:/Programming/cpp/rkpp_animals/Cat.h \
+  D:/Programming/cpp/rkpp_animals/Parrot.h \
+  D:/Programming/cpp/rkpp_animals/Fish.h \
+  D:/Programming/cpp/rkpp_animals/Pig.h \
   C:/msys64/mingw64/include/c++/13.2.0/iostream \
   C:/msys64/mingw64/include/c++/13.2.0/ostream \
   C:/msys64/mingw64/include/c++/13.2.0/ios \

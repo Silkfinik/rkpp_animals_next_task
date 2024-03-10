@@ -80,12 +80,12 @@ clean: CMakeFiles/animals.dir/clean
 CMakeFiles/animals.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Programming\cpp\rkpp_animals\build\CMakeFiles --progress-num=1,2 "Built target animals"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Programming\cpp\rkpp_animals\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target animals"
 .PHONY : CMakeFiles/animals.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/animals.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Programming\cpp\rkpp_animals\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Programming\cpp\rkpp_animals\build\CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/animals.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Programming\cpp\rkpp_animals\build\CMakeFiles 0
 .PHONY : CMakeFiles/animals.dir/rule

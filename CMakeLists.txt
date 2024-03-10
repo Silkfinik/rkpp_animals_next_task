@@ -1,8 +1,16 @@
-cmake_minimum_required(VERSION 3.8)
-
+cmake_minimum_required(VERSION 3.28)
 project(animals)
 
+# Установим стандарт C++ на C++17
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(animals main.cpp)
+# Укажем директорию с заголовочными файлами
+include_directories(include)
+
+# Получим список всех исходных файлов, кроме funcs.cpp
+file(GLOB_RECURSE SOURCES "src/*.cpp")
+list(REMOVE_ITEM SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/funcs.cpp")
+
+# Создадим исполняемый файл из всех найденных исходных файлов
+add_executable(animals ${SOURCES})

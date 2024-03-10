@@ -128,29 +128,197 @@ animals/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/build
 .PHONY : animals/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+src/Animal.obj: src/Animal.cpp.obj
+.PHONY : src/Animal.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+src/Animal.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Animal.cpp.obj
+.PHONY : src/Animal.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/Animal.i: src/Animal.cpp.i
+.PHONY : src/Animal.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/Animal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Animal.cpp.i
+.PHONY : src/Animal.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/Animal.s: src/Animal.cpp.s
+.PHONY : src/Animal.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/Animal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Animal.cpp.s
+.PHONY : src/Animal.cpp.s
+
+src/Cat.obj: src/Cat.cpp.obj
+.PHONY : src/Cat.obj
+
+# target to build an object file
+src/Cat.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Cat.cpp.obj
+.PHONY : src/Cat.cpp.obj
+
+src/Cat.i: src/Cat.cpp.i
+.PHONY : src/Cat.i
+
+# target to preprocess a source file
+src/Cat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Cat.cpp.i
+.PHONY : src/Cat.cpp.i
+
+src/Cat.s: src/Cat.cpp.s
+.PHONY : src/Cat.s
+
+# target to generate assembly for a file
+src/Cat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Cat.cpp.s
+.PHONY : src/Cat.cpp.s
+
+src/Dog.obj: src/Dog.cpp.obj
+.PHONY : src/Dog.obj
+
+# target to build an object file
+src/Dog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Dog.cpp.obj
+.PHONY : src/Dog.cpp.obj
+
+src/Dog.i: src/Dog.cpp.i
+.PHONY : src/Dog.i
+
+# target to preprocess a source file
+src/Dog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Dog.cpp.i
+.PHONY : src/Dog.cpp.i
+
+src/Dog.s: src/Dog.cpp.s
+.PHONY : src/Dog.s
+
+# target to generate assembly for a file
+src/Dog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Dog.cpp.s
+.PHONY : src/Dog.cpp.s
+
+src/Fish.obj: src/Fish.cpp.obj
+.PHONY : src/Fish.obj
+
+# target to build an object file
+src/Fish.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Fish.cpp.obj
+.PHONY : src/Fish.cpp.obj
+
+src/Fish.i: src/Fish.cpp.i
+.PHONY : src/Fish.i
+
+# target to preprocess a source file
+src/Fish.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Fish.cpp.i
+.PHONY : src/Fish.cpp.i
+
+src/Fish.s: src/Fish.cpp.s
+.PHONY : src/Fish.s
+
+# target to generate assembly for a file
+src/Fish.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Fish.cpp.s
+.PHONY : src/Fish.cpp.s
+
+src/Owner.obj: src/Owner.cpp.obj
+.PHONY : src/Owner.obj
+
+# target to build an object file
+src/Owner.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Owner.cpp.obj
+.PHONY : src/Owner.cpp.obj
+
+src/Owner.i: src/Owner.cpp.i
+.PHONY : src/Owner.i
+
+# target to preprocess a source file
+src/Owner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Owner.cpp.i
+.PHONY : src/Owner.cpp.i
+
+src/Owner.s: src/Owner.cpp.s
+.PHONY : src/Owner.s
+
+# target to generate assembly for a file
+src/Owner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Owner.cpp.s
+.PHONY : src/Owner.cpp.s
+
+src/Parrot.obj: src/Parrot.cpp.obj
+.PHONY : src/Parrot.obj
+
+# target to build an object file
+src/Parrot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Parrot.cpp.obj
+.PHONY : src/Parrot.cpp.obj
+
+src/Parrot.i: src/Parrot.cpp.i
+.PHONY : src/Parrot.i
+
+# target to preprocess a source file
+src/Parrot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Parrot.cpp.i
+.PHONY : src/Parrot.cpp.i
+
+src/Parrot.s: src/Parrot.cpp.s
+.PHONY : src/Parrot.s
+
+# target to generate assembly for a file
+src/Parrot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Parrot.cpp.s
+.PHONY : src/Parrot.cpp.s
+
+src/Pig.obj: src/Pig.cpp.obj
+.PHONY : src/Pig.obj
+
+# target to build an object file
+src/Pig.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Pig.cpp.obj
+.PHONY : src/Pig.cpp.obj
+
+src/Pig.i: src/Pig.cpp.i
+.PHONY : src/Pig.i
+
+# target to preprocess a source file
+src/Pig.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Pig.cpp.i
+.PHONY : src/Pig.cpp.i
+
+src/Pig.s: src/Pig.cpp.s
+.PHONY : src/Pig.s
+
+# target to generate assembly for a file
+src/Pig.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/Pig.cpp.s
+.PHONY : src/Pig.cpp.s
+
+src/main.obj: src/main.cpp.obj
+.PHONY : src/main.obj
+
+# target to build an object file
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -161,9 +329,30 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... animals
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... src/Animal.obj
+	@echo ... src/Animal.i
+	@echo ... src/Animal.s
+	@echo ... src/Cat.obj
+	@echo ... src/Cat.i
+	@echo ... src/Cat.s
+	@echo ... src/Dog.obj
+	@echo ... src/Dog.i
+	@echo ... src/Dog.s
+	@echo ... src/Fish.obj
+	@echo ... src/Fish.i
+	@echo ... src/Fish.s
+	@echo ... src/Owner.obj
+	@echo ... src/Owner.i
+	@echo ... src/Owner.s
+	@echo ... src/Parrot.obj
+	@echo ... src/Parrot.i
+	@echo ... src/Parrot.s
+	@echo ... src/Pig.obj
+	@echo ... src/Pig.i
+	@echo ... src/Pig.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
 .PHONY : help
 
 

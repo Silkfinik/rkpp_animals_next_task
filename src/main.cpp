@@ -1,4 +1,5 @@
-#include "Animals.cpp"
+#include "funcs.cpp"
+#include <vector>
 
 int main() {
     std::vector<Animal*> pets;
