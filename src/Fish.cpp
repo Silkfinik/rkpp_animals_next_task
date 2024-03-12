@@ -14,13 +14,13 @@ __int16 Fish::GetAvgDepth() const {
 }
 
 Fish& Fish::operator=(const Fish& other) {
-    static_cast<Animal&>(*this) = other;
+    Animal::operator=(other);
     avg_depth = other.avg_depth;
     return *this;
 }
 
 Fish& Fish::operator=(Fish&& other) noexcept {
-    static_cast<Animal&>(*this) = std::move(other);
+    Animal::operator=(std::move(other));
     avg_depth = std::move(other.avg_depth);
     return *this;
 }

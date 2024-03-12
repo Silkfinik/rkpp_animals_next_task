@@ -14,13 +14,13 @@ __int16 Pig::GetPigletSize() const {
 }
 
 Pig& Pig::operator=(const Pig& other) {
-    static_cast<Animal&>(*this) = other;
+    Animal::operator=(other);
     piglet_size = other.piglet_size;
     return *this;
 }
 
 Pig& Pig::operator=(Pig&& other) noexcept {
-    static_cast<Animal&>(*this) = std::move(other);
+    Animal::operator=(std::move(other));
     piglet_size = std::move(other.piglet_size);
     return *this;
 }

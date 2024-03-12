@@ -14,13 +14,13 @@ __int16 Parrot::GetLexicon() const {
 }
 
 Parrot& Parrot::operator=(const Parrot& other) {
-    static_cast<Animal&>(*this) = other;
+    Animal::operator=(other);
     lexicon = other.lexicon;
     return *this;
 }
 
 Parrot& Parrot::operator=(Parrot&& other) noexcept {
-    static_cast<Animal&>(*this) = std::move(other);
+    Animal::operator=(std::move(other));
     lexicon = std::move(other.lexicon);
     return *this;
 }

@@ -14,13 +14,13 @@ std::string Dog::GetBreed() const {
 }
 
 Dog& Dog::operator=(const Dog& other) {
-    static_cast<Animal&>(*this) = other;
+    Animal::operator=(other);
     breed = other.breed;
     return *this;
 }
 
 Dog& Dog::operator=(Dog&& other) noexcept {
-    static_cast<Animal&>(*this) = std::move(other);
+    Animal::operator=(std::move(other));
     breed = std::move(other.breed);
     return *this;
 }

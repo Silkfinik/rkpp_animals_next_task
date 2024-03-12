@@ -14,13 +14,13 @@ std::string Cat::GetColor() const {
 }
 
 Cat& Cat::operator=(const Cat& other) {
-    static_cast<Animal&>(*this) = other;
+    Animal::operator=(other);
     color = other.color;
     return *this;
 }
 
 Cat& Cat::operator=(Cat&& other) noexcept {
-    static_cast<Animal&>(*this) = std::move(other);
+    Animal::operator=(std::move(other));
     color = std::move(other.color);
     return *this;
 }
