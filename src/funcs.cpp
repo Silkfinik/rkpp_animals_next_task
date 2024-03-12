@@ -8,8 +8,6 @@
 #include <vector>
 
 
-
-
 std::string cut_fill(std::string& line, const char& symbol) {
     std::string temp = line.substr(0, line.find(symbol));
     line.erase(0, line.find(symbol) + 1);

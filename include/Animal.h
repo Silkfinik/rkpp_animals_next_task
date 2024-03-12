@@ -10,7 +10,7 @@ protected:
     std::optional<Owner> owner;
     std::optional <std::string> a_name;
     std::optional <__int16> age;
-    const __int16 id;
+    __int16 id;
 public:
     Animal() : id(count++) {};
 

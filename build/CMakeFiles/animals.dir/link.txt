@@ -1,3 +1,3 @@
 "C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\animals.dir/objects.a
 C:\msys64\mingw64\bin\llvm-ar.exe qc CMakeFiles\animals.dir/objects.a @CMakeFiles\animals.dir\objects1.rsp
-C:\msys64\mingw64\bin\clang++.exe -g -Wl,--whole-archive CMakeFiles\animals.dir/objects.a -Wl,--no-whole-archive -o animals.exe -Wl,--out-implib,libanimals.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\animals.dir\linkLibs.rsp
+C:\msys64\mingw64\bin\clang++.exe -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles\animals.dir/objects.a -Wl,--no-whole-archive -o animals.exe -Wl,--out-implib,libanimals.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\animals.dir\linkLibs.rsp

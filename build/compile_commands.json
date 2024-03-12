@@ -1,49 +1,49 @@
 [
 {
   "directory": "D:/Programming/cpp/rkpp_animals/build",
-  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe  @CMakeFiles/animals.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\animals.dir\\src\\Animal.cpp.obj -c D:\\Programming\\cpp\\rkpp_animals\\src\\Animal.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe  @CMakeFiles/animals.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\animals.dir\\src\\Animal.cpp.obj -c D:\\Programming\\cpp\\rkpp_animals\\src\\Animal.cpp",
   "file": "D:/Programming/cpp/rkpp_animals/src/Animal.cpp",
   "output": "CMakeFiles/animals.dir/src/Animal.cpp.obj"
 },
 {
   "directory": "D:/Programming/cpp/rkpp_animals/build",
-  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe  @CMakeFiles/animals.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\animals.dir\\src\\Cat.cpp.obj -c D:\\Programming\\cpp\\rkpp_animals\\src\\Cat.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe  @CMakeFiles/animals.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\animals.dir\\src\\Cat.cpp.obj -c D:\\Programming\\cpp\\rkpp_animals\\src\\Cat.cpp",
   "file": "D:/Programming/cpp/rkpp_animals/src/Cat.cpp",
   "output": "CMakeFiles/animals.dir/src/Cat.cpp.obj"
 },
 {
   "directory": "D:/Programming/cpp/rkpp_animals/build",
-  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe  @CMakeFiles/animals.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\animals.dir\\src\\Dog.cpp.obj -c D:\\Programming\\cpp\\rkpp_animals\\src\\Dog.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe  @CMakeFiles/animals.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\animals.dir\\src\\Dog.cpp.obj -c D:\\Programming\\cpp\\rkpp_animals\\src\\Dog.cpp",
   "file": "D:/Programming/cpp/rkpp_animals/src/Dog.cpp",
   "output": "CMakeFiles/animals.dir/src/Dog.cpp.obj"
 },
 {
   "directory": "D:/Programming/cpp/rkpp_animals/build",
-  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe  @CMakeFiles/animals.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\animals.dir\\src\\Fish.cpp.obj -c D:\\Programming\\cpp\\rkpp_animals\\src\\Fish.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe  @CMakeFiles/animals.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\animals.dir\\src\\Fish.cpp.obj -c D:\\Programming\\cpp\\rkpp_animals\\src\\Fish.cpp",
   "file": "D:/Programming/cpp/rkpp_animals/src/Fish.cpp",
   "output": "CMakeFiles/animals.dir/src/Fish.cpp.obj"
 },
 {
   "directory": "D:/Programming/cpp/rkpp_animals/build",
-  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe  @CMakeFiles/animals.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\animals.dir\\src\\Owner.cpp.obj -c D:\\Programming\\cpp\\rkpp_animals\\src\\Owner.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe  @CMakeFiles/animals.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\animals.dir\\src\\Owner.cpp.obj -c D:\\Programming\\cpp\\rkpp_animals\\src\\Owner.cpp",
   "file": "D:/Programming/cpp/rkpp_animals/src/Owner.cpp",
   "output": "CMakeFiles/animals.dir/src/Owner.cpp.obj"
 },
 {
   "directory": "D:/Programming/cpp/rkpp_animals/build",
-  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe  @CMakeFiles/animals.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\animals.dir\\src\\Parrot.cpp.obj -c D:\\Programming\\cpp\\rkpp_animals\\src\\Parrot.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe  @CMakeFiles/animals.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\animals.dir\\src\\Parrot.cpp.obj -c D:\\Programming\\cpp\\rkpp_animals\\src\\Parrot.cpp",
   "file": "D:/Programming/cpp/rkpp_animals/src/Parrot.cpp",
   "output": "CMakeFiles/animals.dir/src/Parrot.cpp.obj"
 },
 {
   "directory": "D:/Programming/cpp/rkpp_animals/build",
-  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe  @CMakeFiles/animals.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\animals.dir\\src\\Pig.cpp.obj -c D:\\Programming\\cpp\\rkpp_animals\\src\\Pig.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe  @CMakeFiles/animals.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\animals.dir\\src\\Pig.cpp.obj -c D:\\Programming\\cpp\\rkpp_animals\\src\\Pig.cpp",
   "file": "D:/Programming/cpp/rkpp_animals/src/Pig.cpp",
   "output": "CMakeFiles/animals.dir/src/Pig.cpp.obj"
 },
 {
   "directory": "D:/Programming/cpp/rkpp_animals/build",
-  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe  @CMakeFiles/animals.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\animals.dir\\src\\main.cpp.obj -c D:\\Programming\\cpp\\rkpp_animals\\src\\main.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe  @CMakeFiles/animals.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\animals.dir\\src\\main.cpp.obj -c D:\\Programming\\cpp\\rkpp_animals\\src\\main.cpp",
   "file": "D:/Programming/cpp/rkpp_animals/src/main.cpp",
   "output": "CMakeFiles/animals.dir/src/main.cpp.obj"
 }

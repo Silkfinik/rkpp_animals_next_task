@@ -35,6 +35,7 @@ __int16 Animal::GetId() const {
 }
 
 Animal& Animal::operator=(const Animal& other) {
+    id = other.id;
     owner = other.owner;
     a_name = other.a_name;
     age = other.age;
@@ -42,6 +43,7 @@ Animal& Animal::operator=(const Animal& other) {
 }
 
 Animal& Animal::operator=(Animal&& other) noexcept {
+    id = std::move(other.id);
     owner = std::move(other.owner);
     a_name = std::move(other.a_name);
     age = std::move(other.age);
