@@ -4,27 +4,30 @@
 #include "Animal.h"
 
 class Parrot final : public Animal {
-private:
-    std::optional<int16_t> lexicon;
-public:
-    using Animal::Animal;
+ private:
+  std::optional<int16_t> lexicon;
 
-    Parrot (Owner _owner, std::string _name, const int16_t& _age, const int16_t& _lexicon) : Animal(std::move(_owner),
-        std::move(_name), _age), lexicon(_lexicon) {};
+ public:
+  using Animal::Animal;
 
-    Parrot (const Parrot& other) : Animal(other), lexicon(other.lexicon) {};
+  Parrot(Owner _owner, std::string _name, const int16_t& _age,
+         const int16_t& _lexicon)
+      : Animal(std::move(_owner), std::move(_name), _age), lexicon(_lexicon){};
 
-    Parrot(Parrot&& other) noexcept : Animal(std::move(other)), lexicon(std::move(other.lexicon)) {};
+  Parrot(const Parrot& other) : Animal(other), lexicon(other.lexicon){};
 
-    Parrot& operator=(const Parrot& other);
+  Parrot(Parrot&& other) noexcept
+      : Animal(std::move(other)), lexicon(std::move(other.lexicon)){};
 
-    Parrot& operator=(Parrot&& other) noexcept;
+  Parrot& operator=(const Parrot& other);
 
-    void MakeSound() const override;
+  Parrot& operator=(Parrot&& other) noexcept;
 
-    int16_t GetLexicon() const;
+  void MakeSound() const override;
 
-    void SetLexicon(const int16_t& _lexicon);
+  int16_t GetLexicon() const;
+
+  void SetLexicon(const int16_t& _lexicon);
 };
 
-#endif //PARROT_H
+#endif  // PARROT_H

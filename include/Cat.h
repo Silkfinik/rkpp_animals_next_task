@@ -4,27 +4,30 @@
 #include "Animal.h"
 
 class Cat final : public Animal {
-private:
-    std::optional<std::string> color;
-public:
-    using Animal::Animal;
+ private:
+  std::optional<std::string> color;
 
-    Cat (Owner _owner, std::string _name, const int16_t& _age, std::string _color) : Animal(std::move(_owner),
-        std::move(_name), _age), color(std::move(_color)) {};
+ public:
+  using Animal::Animal;
 
-    Cat (const Cat& other) : Animal(other), color(other.color) {};
+  Cat(Owner _owner, std::string _name, const int16_t& _age, std::string _color)
+      : Animal(std::move(_owner), std::move(_name), _age),
+        color(std::move(_color)){};
 
-    Cat(Cat&& other) noexcept : Animal(std::move(other)), color(std::move(other.color)) {};
+  Cat(const Cat& other) : Animal(other), color(other.color){};
 
-    Cat& operator=(const Cat& other);
+  Cat(Cat&& other) noexcept
+      : Animal(std::move(other)), color(std::move(other.color)){};
 
-    Cat& operator=(Cat&& other) noexcept;
+  Cat& operator=(const Cat& other);
 
-    void MakeSound() const override;
+  Cat& operator=(Cat&& other) noexcept;
 
-    [[nodiscard]] std::string GetColor() const;
+  void MakeSound() const override;
 
-    void SetColor(const std::string& _color);
+  [[nodiscard]] std::string GetColor() const;
+
+  void SetColor(const std::string& _color);
 };
 
-#endif //CAT_H
+#endif  // CAT_H

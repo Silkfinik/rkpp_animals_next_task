@@ -4,27 +4,31 @@
 #include "Animal.h"
 
 class Fish final : public Animal {
-private:
-    std::optional<int16_t> avg_depth;
-public:
-    using Animal::Animal;
+ private:
+  std::optional<int16_t> avg_depth;
 
-    Fish (Owner _owner, std::string _name, const int16_t& _age, const int16_t& _avg_depth) : Animal(std::move(_owner),
-        std::move(_name), _age), avg_depth(_avg_depth) {};
+ public:
+  using Animal::Animal;
 
-    Fish (const Fish& other) : Animal(other), avg_depth(other.avg_depth) {};
+  Fish(Owner _owner, std::string _name, const int16_t& _age,
+       const int16_t& _avg_depth)
+      : Animal(std::move(_owner), std::move(_name), _age),
+        avg_depth(_avg_depth){};
 
-    Fish(Fish&& other) noexcept : Animal(std::move(other)), avg_depth(std::move(other.avg_depth)) {};
+  Fish(const Fish& other) : Animal(other), avg_depth(other.avg_depth){};
 
-    Fish& operator=(const Fish& other);
+  Fish(Fish&& other) noexcept
+      : Animal(std::move(other)), avg_depth(std::move(other.avg_depth)){};
 
-    Fish& operator=(Fish&& other) noexcept;
+  Fish& operator=(const Fish& other);
 
-    void MakeSound() const override;
+  Fish& operator=(Fish&& other) noexcept;
 
-    int16_t GetAvgDepth() const;
+  void MakeSound() const override;
 
-    void SetAvgDepth(const int16_t& _avg_depth);
+  int16_t GetAvgDepth() const;
+
+  void SetAvgDepth(const int16_t& _avg_depth);
 };
 
-#endif //FISH_H
+#endif  // FISH_H
