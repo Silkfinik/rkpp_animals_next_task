@@ -6,10 +6,10 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.28"
+						"string" : "3.22.1"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "Release",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "animals::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-animals-Release-91196b123f52f815d430.json",
+					"jsonFile" : "target-animals-Debug-3642ffee05a82ab19ac2.json",
 					"name" : "animals",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Programming/cpp/rkpp_animals/build",
-		"source" : "D:/Programming/cpp/rkpp_animals"
+		"build" : "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/build",
+		"source" : "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 3
 	}
 }

@@ -5,11 +5,11 @@
 
 class Parrot final : public Animal {
 private:
-    std::optional<__int16> lexicon;
+    std::optional<int16_t> lexicon;
 public:
     using Animal::Animal;
 
-    Parrot (Owner _owner, std::string _name, const __int16& _age, const __int16& _lexicon) : Animal(std::move(_owner),
+    Parrot (Owner _owner, std::string _name, const int16_t& _age, const int16_t& _lexicon) : Animal(std::move(_owner),
         std::move(_name), _age), lexicon(_lexicon) {};
 
     Parrot (const Parrot& other) : Animal(other), lexicon(other.lexicon) {};
@@ -22,9 +22,9 @@ public:
 
     void MakeSound() const override;
 
-    __int16 GetLexicon() const;
+    int16_t GetLexicon() const;
 
-    void SetLexicon(const __int16& _lexicon);
+    void SetLexicon(const int16_t& _lexicon);
 };
 
 #endif //PARROT_H

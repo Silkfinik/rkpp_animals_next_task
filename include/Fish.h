@@ -5,11 +5,11 @@
 
 class Fish final : public Animal {
 private:
-    std::optional<__int16> avg_depth;
+    std::optional<int16_t> avg_depth;
 public:
     using Animal::Animal;
 
-    Fish (Owner _owner, std::string _name, const __int16& _age, const __int16& _avg_depth) : Animal(std::move(_owner),
+    Fish (Owner _owner, std::string _name, const int16_t& _age, const int16_t& _avg_depth) : Animal(std::move(_owner),
         std::move(_name), _age), avg_depth(_avg_depth) {};
 
     Fish (const Fish& other) : Animal(other), avg_depth(other.avg_depth) {};
@@ -22,9 +22,9 @@ public:
 
     void MakeSound() const override;
 
-    __int16 GetAvgDepth() const;
+    int16_t GetAvgDepth() const;
 
-    void SetAvgDepth(const __int16& _avg_depth);
+    void SetAvgDepth(const int16_t& _avg_depth);
 };
 
 #endif //FISH_H

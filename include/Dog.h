@@ -9,7 +9,7 @@ private:
 public:
     using Animal::Animal;
 
-    Dog (Owner _owner, std::string _name, const __int16& _age, std::string _breed) : Animal(std::move(_owner),
+    Dog (Owner _owner, std::string _name, const int16_t& _age, std::string _breed) : Animal(std::move(_owner),
         std::move(_name), _age), breed(std::move(_breed)) {};
 
     Dog (const Dog& other) : Animal(other), breed(other.breed) {};

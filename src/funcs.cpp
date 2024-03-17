@@ -30,7 +30,7 @@ void ReadFile(const std::string& filename, std::vector<Animal*>& pets) {
         std::string b_date;
         std::string a_type;
         std::string a_name;
-        __int16 a_age;
+        int16_t a_age;
         o_name = cut_fill(line, ';');
         adress = cut_fill(line, ';');
         phone = cut_fill(line, ';');
@@ -74,7 +74,7 @@ void ReadFile(const std::string& filename, std::vector<Animal*>& pets) {
     input_file.close();
 }
 
-void PrintByID(__int16 id, const std::vector<Animal*>& pets) {
+void PrintByID(int16_t id, const std::vector<Animal*>& pets) {
     --id;
     std::cout << "ID: " << pets[id]->GetId() << std::endl;
     std::string type = typeid(*pets[id]).name();
@@ -90,8 +90,8 @@ void PrintByID(__int16 id, const std::vector<Animal*>& pets) {
 
 void PrintPets(const std::vector<Animal*>& pets) {
     std::cout << "| All animals |\n" << std::endl;
-    __int16 size = pets.size();
-    for (__int16 i = 1; i <= size; ++i) {
+    int16_t size = pets.size();
+    for (int16_t i = 1; i <= size; ++i) {
         PrintByID(i, pets);
     }
 }
@@ -170,7 +170,7 @@ void AmountOfTypesByName(const std::vector<Animal*>& pets) {
 }
 
 void YoungestOldestOfEachSpecies(const std::vector<Animal*>& pets) {
-    std::map<std::string, std::set<__int16> > type_ages;
+    std::map<std::string, std::set<int16_t> > type_ages;
     for (auto& pet : pets) {
         std::string type = typeid(*pet).name();
         type = type.substr(1);
@@ -223,7 +223,7 @@ void ChangeOwnerData(Owner& owner) {
     std::cout << "3. Change owner phone\n";
     std::cout << "4. Change owner birth date\n";
     std::cout << "Enter the number of the action: ";
-    __int16 action;
+    int16_t action;
     std::cin >> action;
     std::string temp;
     switch (action) {
@@ -255,7 +255,7 @@ void ChangeOwnerData(Owner& owner) {
 
 void ChangeAnimalData(std::vector <Animal*>& pets) {
     std::cout << "Enter the ID of the animal you want to change: ";
-    __int16 id;
+    int16_t id;
     std::cin >> id;
     if (id > pets.size() || id < 1) {
         std::cerr << "Unknown ID!\n" << std::endl;
@@ -267,7 +267,7 @@ void ChangeAnimalData(std::vector <Animal*>& pets) {
     std::cout << "2. Change animal name\n";
     std::cout << "3. Change animal age\n";
     std::cout << "Enter the number of the action: ";
-    __int16 action;
+    int16_t action;
     std::cin >> action;
     std::string temp;
     switch (action) {
@@ -281,7 +281,7 @@ void ChangeAnimalData(std::vector <Animal*>& pets) {
             break;
         case 3:
             std::cout << "Enter new animal age: ";
-            __int16 age;
+            int16_t age;
             std::cin >> age;
             pets[id]->SetAge(age);
             break;
@@ -293,7 +293,7 @@ void ChangeAnimalData(std::vector <Animal*>& pets) {
 
 void Do(const std::vector<Animal*>& pets) {
     std::cout << "Enter animal ID: ";
-    __int16 id;
+    int16_t id;
     std::cin >> id;
     if (id > pets.size() || id < 1) {
         std::cerr << "Unknown ID!\n" << std::endl;
@@ -318,7 +318,7 @@ void Do(const std::vector<Animal*>& pets) {
 }
 
 void Menu (std::vector<Animal*>& pets) {
-    __int16 action;
+    int16_t action;
     while (true) {
         std::cout << "1. Print all animals\n";
         std::cout << "2. The number of different types of animals each owner has\n";

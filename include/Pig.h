@@ -5,11 +5,11 @@
 
 class Pig final : public Animal {
 private:
-    std::optional<__int16> piglet_size;
+    std::optional<int16_t> piglet_size;
 public:
     using Animal::Animal;
 
-    Pig (Owner _owner, std::string _name, const __int16& _age, const __int16& _piglet_size) : Animal(std::move(_owner),
+    Pig (Owner _owner, std::string _name, const int16_t& _age, const int16_t& _piglet_size) : Animal(std::move(_owner),
         std::move(_name), _age), piglet_size(_piglet_size) {};
 
     Pig (const Pig& other) : Animal(other), piglet_size(other.piglet_size) {};
@@ -22,9 +22,9 @@ public:
 
     void MakeSound() const override;
 
-    __int16 GetPigletSize() const;
+    int16_t GetPigletSize() const;
 
-    void SetPigletSize(const __int16& _piglet_size);
+    void SetPigletSize(const int16_t& _piglet_size);
 };
 
 #endif //PIG_H

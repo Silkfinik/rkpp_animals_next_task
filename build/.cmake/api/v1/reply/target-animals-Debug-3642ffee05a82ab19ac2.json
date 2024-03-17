@@ -2,10 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "animals.exe"
-		},
-		{
-			"path" : "animals.pdb"
+			"path" : "animals"
 		}
 	],
 	"backtrace" : 1,
@@ -45,14 +42,17 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-O3 -DNDEBUG -std=gnu++17"
+					"fragment" : "-g"
+				},
+				{
+					"fragment" : "-std=gnu++17"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 2,
-					"path" : "D:/Programming/cpp/rkpp_animals/include"
+					"path" : "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/include"
 				}
 			],
 			"language" : "CXX",
@@ -83,22 +83,18 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-O3 -DNDEBUG",
+				"fragment" : "-g",
 				"role" : "flags"
 			},
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "animals",
-	"nameOnDisk" : "animals.exe",
+	"nameOnDisk" : "animals",
 	"paths" : 
 	{
 		"build" : ".",

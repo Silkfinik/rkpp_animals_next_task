@@ -1,6 +1,6 @@
 #include "../include/Animal.h"
 
-__int16 Animal::count = 1;
+int16_t Animal::count = 1;
 
 void Animal::SetOwner(const Owner& _owner) {
     owner = _owner;
@@ -10,7 +10,7 @@ void Animal::SetAName(const std::string& _name) {
     a_name = _name;
 }
 
-void Animal::SetAge(const __int16& _age) {
+void Animal::SetAge(const int16_t& _age) {
     age = _age;
 }
 
@@ -18,7 +18,7 @@ std::string Animal::GetAName() const {
     return a_name.value();
 }
 
-__int16 Animal::GetAge() const {
+int16_t Animal::GetAge() const {
     return age.value();
 }
 
@@ -30,7 +30,7 @@ Owner Animal::GetOwner() const {
     return owner.value();
 }
 
-__int16 Animal::GetId() const {
+int16_t Animal::GetId() const {
     return id;
 }
 

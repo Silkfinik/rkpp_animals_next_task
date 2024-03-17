@@ -5,11 +5,11 @@ void Pig::MakeSound() const {
     std::cout << "Oink!" << std::endl;
 }
 
-void Pig::SetPigletSize(const __int16& _piglet_size) {
+void Pig::SetPigletSize(const int16_t& _piglet_size) {
     piglet_size = _piglet_size;
 }
 
-__int16 Pig::GetPigletSize() const {
+int16_t Pig::GetPigletSize() const {
     return piglet_size.value();
 }
 

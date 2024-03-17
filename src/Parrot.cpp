@@ -5,11 +5,11 @@ void Parrot::MakeSound() const {
     std::cout << "Squawk!" << std::endl;
 }
 
-void Parrot::SetLexicon(const __int16& _lexicon) {
+void Parrot::SetLexicon(const int16_t& _lexicon) {
     lexicon = _lexicon;
 }
 
-__int16 Parrot::GetLexicon() const {
+int16_t Parrot::GetLexicon() const {
     return lexicon.value();
 }
 

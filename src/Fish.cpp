@@ -5,11 +5,11 @@ void Fish::MakeSound() const {
     std::cout << "Blub!" << std::endl;
 }
 
-void Fish::SetAvgDepth(const __int16& _avg_depth) {
+void Fish::SetAvgDepth(const int16_t& _avg_depth) {
     avg_depth = _avg_depth;
 }
 
-__int16 Fish::GetAvgDepth() const {
+int16_t Fish::GetAvgDepth() const {
     return avg_depth.value();
 }
 
