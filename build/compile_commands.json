@@ -1,42 +1,42 @@
 [
 {
   "directory": "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/build",
-  "command": "/usr/bin/clang++  -I/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/include -g -std=gnu++17 -o CMakeFiles/animals.dir/src/Animal.cpp.o -c /media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Animal.cpp",
+  "command": "/usr/bin/clang++ -I/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/include -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/animals.dir/main.cpp.o -c /media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/main.cpp",
+  "file": "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/main.cpp"
+},
+{
+  "directory": "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/build",
+  "command": "/usr/bin/clang++ -I/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/include -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/animals.dir/src/Animal.cpp.o -c /media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Animal.cpp",
   "file": "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Animal.cpp"
 },
 {
   "directory": "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/build",
-  "command": "/usr/bin/clang++  -I/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/include -g -std=gnu++17 -o CMakeFiles/animals.dir/src/Cat.cpp.o -c /media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Cat.cpp",
+  "command": "/usr/bin/clang++ -I/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/include -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/animals.dir/src/Cat.cpp.o -c /media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Cat.cpp",
   "file": "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Cat.cpp"
 },
 {
   "directory": "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/build",
-  "command": "/usr/bin/clang++  -I/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/include -g -std=gnu++17 -o CMakeFiles/animals.dir/src/Dog.cpp.o -c /media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Dog.cpp",
+  "command": "/usr/bin/clang++ -I/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/include -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/animals.dir/src/Dog.cpp.o -c /media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Dog.cpp",
   "file": "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Dog.cpp"
 },
 {
   "directory": "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/build",
-  "command": "/usr/bin/clang++  -I/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/include -g -std=gnu++17 -o CMakeFiles/animals.dir/src/Fish.cpp.o -c /media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Fish.cpp",
+  "command": "/usr/bin/clang++ -I/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/include -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/animals.dir/src/Fish.cpp.o -c /media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Fish.cpp",
   "file": "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Fish.cpp"
 },
 {
   "directory": "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/build",
-  "command": "/usr/bin/clang++  -I/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/include -g -std=gnu++17 -o CMakeFiles/animals.dir/src/Owner.cpp.o -c /media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Owner.cpp",
+  "command": "/usr/bin/clang++ -I/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/include -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/animals.dir/src/Owner.cpp.o -c /media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Owner.cpp",
   "file": "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Owner.cpp"
 },
 {
   "directory": "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/build",
-  "command": "/usr/bin/clang++  -I/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/include -g -std=gnu++17 -o CMakeFiles/animals.dir/src/Parrot.cpp.o -c /media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Parrot.cpp",
+  "command": "/usr/bin/clang++ -I/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/include -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/animals.dir/src/Parrot.cpp.o -c /media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Parrot.cpp",
   "file": "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Parrot.cpp"
 },
 {
   "directory": "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/build",
-  "command": "/usr/bin/clang++  -I/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/include -g -std=gnu++17 -o CMakeFiles/animals.dir/src/Pig.cpp.o -c /media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Pig.cpp",
+  "command": "/usr/bin/clang++ -I/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/include -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/animals.dir/src/Pig.cpp.o -c /media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Pig.cpp",
   "file": "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/Pig.cpp"
-},
-{
-  "directory": "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/build",
-  "command": "/usr/bin/clang++  -I/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/include -g -std=gnu++17 -o CMakeFiles/animals.dir/src/main.cpp.o -c /media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/main.cpp",
-  "file": "/media/silkfinik/BE1C9F8C1C9F3DF9/Programming/cpp/rkpp_animals/src/main.cpp"
 }
 ]

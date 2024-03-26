@@ -13,4 +13,4 @@ file(GLOB_RECURSE SOURCES "src/*.cpp")
 list(REMOVE_ITEM SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/funcs.cpp")
 
 # Создадим исполняемый файл из всех найденных исходных файлов
-add_executable(animals ${SOURCES})
+add_executable(animals main.cpp ${SOURCES})

@@ -1,7 +1,6 @@
 #include <vector>
 
-#include "funcs.cpp"
-
+#include "../src/funcs.cpp"
 
 int main() {
   std::vector<Animal*> pets;

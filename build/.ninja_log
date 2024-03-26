@@ -2,3 +2,12 @@
 17	3091	7314190332983793	CMakeFiles/animals.dir/main.cpp.obj	cba9cbab672c536d
 6	1536	7308194348530115	CMakeFiles/animals.dir/Animals.cpp.obj	70ca79a51d51e982
 3092	3431	7314190336411805	animals.exe	2150644826b0da6a
+4	795	1711464215305999700	CMakeFiles/animals.dir/src/Owner.cpp.o	87ef53e44ecba67f
+1	805	1711464215313379900	CMakeFiles/animals.dir/src/Animal.cpp.o	1b32d1d2805b016d
+5	883	1711464215395676800	CMakeFiles/animals.dir/src/Parrot.cpp.o	cba19d16a8bd9211
+3	916	1711464215427486400	CMakeFiles/animals.dir/src/Fish.cpp.o	950e8ee0f20f37ab
+2	936	1711464215447702800	CMakeFiles/animals.dir/src/Dog.cpp.o	cef4785b826f8776
+2	958	1711464215470732600	CMakeFiles/animals.dir/src/Cat.cpp.o	6066834da8dc94c6
+7	975	1711464215490683200	CMakeFiles/animals.dir/src/Pig.cpp.o	f9c3e8ce7a7a80d
+2	1828	1711464277962758200	CMakeFiles/animals.dir/main.cpp.o	91ad5a9bd5b3b595
+1830	1955	1711464278093997900	animals	24a3547d7394a1cf

@@ -5,7 +5,10 @@
 #include <stdexcept>
 #include <vector>
 
+#include "../include/Composite.h"
 #include "../include/Factories.h"
+#include "Fish.h"
+#include "Parrot.h"
 
 std::string cut_fill(std::string& line, const char& symbol) {
   std::string temp = line.substr(0, line.find(symbol));
@@ -22,6 +25,9 @@ void ReadFile(const std::string& filename, std::vector<Animal*>& pets) {
     throw std::runtime_error("Input file is empty!");
   }
   std::string line;
+
+  CompositeAnimal input;
+
   while (std::getline(input_file, line)) {
     std::string o_name;
     std::string adress;
@@ -36,41 +42,56 @@ void ReadFile(const std::string& filename, std::vector<Animal*>& pets) {
     b_date = cut_fill(line, ';');
     a_type = cut_fill(line, ';');
     a_name = cut_fill(line, ';');
-    CatFactory* CatF = new CatFactory();
-    DogFactory* DogF = new DogFactory();
-    FishFactory* FishF = new FishFactory();
-    ParrotFactory* ParrotF = new ParrotFactory();
-    PigFactory* PigF = new PigFactory();
+
+    // CatFactory* CatF = new CatFactory();
+    // DogFactory* DogF = new DogFactory();
+    // FishFactory* FishF = new FishFactory();
+    // ParrotFactory* ParrotF = new ParrotFactory();
+    // PigFactory* PigF = new PigFactory();
+
     if (!line.empty()) {
       a_age = std::stoi(line);
     }
     Owner owner(o_name, adress, phone, b_date);
+
     if (a_type == "Dog") {
-      pets.push_back(DogF->CreateAnimal(owner, a_name, a_age));
+      input.addAnimal(new Dog(owner, a_name, a_age));
     } else if (a_type == "Cat") {
-      pets.push_back(CatF->CreateAnimal(owner, a_name, a_age));
+      input.addAnimal(new Cat(owner, a_name, a_age));
     } else if (a_type == "Parrot") {
-      pets.push_back(ParrotF->CreateAnimal(owner, a_name, a_age));
+      input.addAnimal(new Parrot(owner, a_name, a_age));
     } else if (a_type == "Fish") {
-      pets.push_back(FishF->CreateAnimal(owner, a_name, a_age));
+      input.addAnimal(new Fish(owner, a_name, a_age));
     } else if (a_type == "Pig") {
-      pets.push_back(PigF->CreateAnimal(owner, a_name, a_age));
+      input.addAnimal(new Pig(owner, a_name, a_age));
     } else {
-      delete CatF;
-      delete DogF;
-      delete ParrotF;
-      delete FishF;
-      delete PigF;
+      // if (a_type == "Dog") {
+      //   pets.push_back(DogF->CreateAnimal(owner, a_name, a_age));
+      // } else if (a_type == "Cat") {
+      //   pets.push_back(CatF->CreateAnimal(owner, a_name, a_age));
+      // } else if (a_type == "Parrot") {
+      //   pets.push_back(ParrotF->CreateAnimal(owner, a_name, a_age));
+      // } else if (a_type == "Fish") {
+      //   pets.push_back(FishF->CreateAnimal(owner, a_name, a_age));
+      // } else if (a_type == "Pig") {
+      //   pets.push_back(PigF->CreateAnimal(owner, a_name, a_age));
+      // } else {
+      // delete CatF;
+      // delete DogF;
+      // delete ParrotF;
+      // delete FishF;
+      // delete PigF;
       input_file.close();
       throw std::runtime_error("Unknown animal type in input file!");
     }
-    delete CatF;
-    delete DogF;
-    delete ParrotF;
-    delete FishF;
-    delete PigF;
+    // delete CatF;
+    // delete DogF;
+    // delete ParrotF;
+    // delete FishF;
+    // delete PigF;
   }
   input_file.close();
+  pets = input.getZoo();
 }
 
 void PrintByID(int16_t id, const std::vector<Animal*>& pets) {
